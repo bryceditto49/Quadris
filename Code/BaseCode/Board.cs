@@ -206,7 +206,7 @@ namespace Quadris {
           }
         }
       }
-      ActivePiece = Piece.GetRandPiece();
+      ActivePiece = Piece.GetFromSevenPieceBag();
     }
 
     public void CheckForLine() {

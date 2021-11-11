@@ -40,7 +40,7 @@ namespace Quadris {
 
     private void FrmMain_Load(object sender, EventArgs e) {
       board = new Board();
-      Piece piece = Piece.GetRandPiece();
+      Piece piece = Piece.GetFromSevenPieceBag();
       board.ActivePiece = piece;
       CreateGrid();
       sndPlayer = new SoundPlayer(Resources.bg_music);

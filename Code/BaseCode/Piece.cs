@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace Quadris {
   public enum PieceType {
@@ -33,6 +34,8 @@ namespace Quadris {
     private const int LAYOUT_ROWS = 4;
     private const int LAYOUT_COLS = 4;
 
+    private static List<int> SevenPieceBag = new List<int> { 0, 1, 2, 3, 4, 5, 6 };
+
     private static readonly Random rand;
 
     public bool[,] Layout { get; private set; }
@@ -57,9 +60,19 @@ namespace Quadris {
       }
     }
 
-    public static Piece GetRandPiece() {
-      int pieceNum = rand.Next(Enum.GetValues(typeof(PieceType)).Length);
-      return MakePiece((PieceType)pieceNum);
+    public static Piece GetFromSevenPieceBag()
+    {
+            SevenPieceBag = SevenPieceBag.OrderBy(a => Guid.NewGuid()).ToList();
+            if (SevenPieceBag.Count() == 0)
+            {
+                SevenPieceBag = new List<int> { 0, 1, 2, 3, 4, 5, 6 };
+                SevenPieceBag = SevenPieceBag.OrderBy(a => Guid.NewGuid()).ToList();
+            }
+           
+            int pieceNum = SevenPieceBag.First();
+            SevenPieceBag.Remove(pieceNum);
+            return MakePiece((PieceType)pieceNum);
+            
     }
 
     public static Piece MakePiece(PieceType type) {

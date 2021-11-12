@@ -43,7 +43,7 @@ namespace Quadris {
       Piece piece = Piece.GetFromSevenPieceBag();
       board.ActivePiece = piece;
       CreateGrid();
-      sndPlayer = new SoundPlayer(Resources.bg_music);
+      sndPlayer = new SoundPlayer(Resources.lofi_music);
       sndPlayer.PlayLooping();
     }
 
@@ -105,7 +105,29 @@ namespace Quadris {
         case Keys.Left:
           board.MoveActivePieceLeft();
           break;
-      }
+        case Keys.Down:
+          tmrFps.Interval = 100;
+          break;
+        /*case Keys.Up:
+          sndPlayer = new SoundPlayer(Resources.lofi_music);
+          sndPlayer.PlayLooping();
+          break;*/
+      } 
     }
-  }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FrmMain_KeyUp(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Down:
+                    tmrFps.Interval = 500;
+                    break;
+            }
+        }
+    }
 }

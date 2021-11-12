@@ -224,7 +224,7 @@ namespace Quadris {
               Grid[dropRow, col] = Grid[dropRow - 1, col];
             }
           }
-          curRow--;
+          //curRow--;
         }
       }
     }

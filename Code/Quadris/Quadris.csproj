@@ -150,9 +150,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\bg_music.wav">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="Data\Game-Tetris-Backgrounds.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\yt5s.com-Tetris - Tetris Theme %28Lofi Lia Remix%29.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

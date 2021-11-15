@@ -232,6 +232,7 @@ namespace Quadris {
         }
 
     public void CheckForLine() {
+
       for (int curRow = 0; curRow < Grid.GetLength(0); curRow++) {
         bool allFilled = true;
         for (int col = 0; col < Grid.GetLength(1); col++) {
@@ -245,7 +246,8 @@ namespace Quadris {
             for (int dropRow = curRow; dropRow > 0; dropRow--) {
               Grid[dropRow, col] = Grid[dropRow - 1, col];
             }
-          }
+                        Grid[0, col] = new GridCellInfo();
+                    }
                     Score++;
                     curRow--;
                 }

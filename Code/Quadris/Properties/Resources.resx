@@ -163,4 +163,49 @@
   <data name="lofi_music" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yt5s.com-Tetris - Tetris Theme (Lofi Lia Remix).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="bg_music_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_music_2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Bitmap1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bitmap1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_blue_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_blue_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_cyan_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_cyan_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_dark_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_dark_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_fire_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_fire_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_green_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_green_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_ground_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_ground_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_ice_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_ice_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_magenta_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_magenta_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_orange_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_orange_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_purple_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_purple_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_red_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_red_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_white_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_white_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_yellow_shape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_yellow_shape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

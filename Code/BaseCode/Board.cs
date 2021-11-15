@@ -1,4 +1,6 @@
 ﻿#pragma warning disable 1591
+using System;
+using System.Collections.Generic;
 namespace Quadris {
   public enum CellState {
     EMPTY,
@@ -10,7 +12,8 @@ namespace Quadris {
   public enum MoveDir {
     LEFT,
     RIGHT,
-    DOWN
+    DOWN,
+    UP
   }
 
   public class GridCellInfo {
@@ -35,8 +38,15 @@ namespace Quadris {
   public class Board {
     public GridCellInfo[,] Grid { get; private set; }
     public Piece ActivePiece { get; set; }
+        // Jacoby: Added variable to check if piece is moveable.
+        public List<Piece> Pieces = new List<Piece>();  //List of current and next piece...
+        public int Score = 0;                           //Score
+        public bool hold_lock = false;                  //Delays swap after one is made 
+        public bool Piece_settled;                      //Checks to see if piece is settled
+        public bool moveable = true;                    //Variable to control moveability of piece
+        public bool Game_Lost = false;
 
-    public Board() {
+        public Board() {
       Grid = new GridCellInfo[24, 10];
       for (int i = 0; i < Grid.GetLength(0); i++) {
         for (int j = 0; j < Grid.GetLength(1); j++) {
@@ -206,8 +216,20 @@ namespace Quadris {
           }
         }
       }
-      ActivePiece = Piece.GetFromSevenPieceBag();
-    }
+        if (ActivePiece.GridRow <= 3)
+        {
+            Game_Lost = true;
+        }
+        else
+        {
+            // Piece is settled and active piece is set to the next piece. The next piece is a randomly generated piece.  Any hold lock is released.
+            ActivePiece = Pieces[1];
+            Pieces[0] = ActivePiece;
+            Pieces[1] = Piece.GetFromSevenPieceBag();
+        }
+        hold_lock = false;
+        Piece_settled = true;
+        }
 
     public void CheckForLine() {
       for (int curRow = 0; curRow < Grid.GetLength(0); curRow++) {
@@ -224,8 +246,9 @@ namespace Quadris {
               Grid[dropRow, col] = Grid[dropRow - 1, col];
             }
           }
-          //curRow--;
-        }
+                    Score++;
+                    curRow--;
+                }
       }
     }
   }

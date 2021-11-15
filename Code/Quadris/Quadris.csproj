@@ -152,9 +152,95 @@
   <ItemGroup>
     <None Include="Data\Game-Tetris-Backgrounds.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\cell_blue_shape.bmp" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\yt5s.com-Tetris - Tetris Theme %28Lofi Lia Remix%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bitmap1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_blue_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_cyan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_cyan_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_dark_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_fire_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_green_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_ground_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_ice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_ice_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_magenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_magenta_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_orange_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_purple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_purple_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_red_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_white_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cell_yellow_shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_music_2.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

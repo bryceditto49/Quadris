@@ -108,10 +108,14 @@ namespace Quadris {
         case Keys.Down:
           tmrFps.Interval = 100;
           break;
-        /*case Keys.Up:
-          sndPlayer = new SoundPlayer(Resources.lofi_music);
-          sndPlayer.PlayLooping();
-          break;*/
+        case Keys.Space:
+          while(board.ActivePieceCanMove(MoveDir.DOWN))
+            {
+              board.Update();
+            }
+            UpdateGrid();
+            board.SettlePiece();
+          break;
       } 
     }
 

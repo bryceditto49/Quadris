@@ -242,5 +242,8 @@
   <ItemGroup>
     <None Include="Resources\bg_music_2.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tetris_theme_3.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

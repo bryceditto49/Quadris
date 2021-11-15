@@ -245,6 +245,7 @@ namespace Quadris {
             for (int dropRow = curRow; dropRow > 0; dropRow--) {
               Grid[dropRow, col] = Grid[dropRow - 1, col];
             }
+                        Grid[0, col] = new GridCellInfo();
           }
                     Score++;
                     curRow--;

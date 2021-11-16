@@ -248,7 +248,7 @@ namespace Quadris {
 
             // (Andres Torres/Jacoby Johnson)
             // Changes the music to more engaging music if the score is greater than 2.
-            if (board.Score > 2 && sound2 == true)
+            if (board.Score > 5 && sound2 == true)
             {
                 sndPlayer = new SoundPlayer(Resources.bg_music_2);
                 sndPlayer.PlayLooping();

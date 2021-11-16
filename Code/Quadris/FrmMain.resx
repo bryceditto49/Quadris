@@ -120,4 +120,25 @@
   <metadata name="tmrFps.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="label4.Text" xml:space="preserve">
+    <value>           Tutorial
+
+Tetris Keys (Moves):
+
+X : Rotates piece clockwise
+
+Z : Rotates piece counterclockwise
+
+Left Key (-&gt;): Moves piece laterally left
+
+Right Key (&lt;-): Moves piece laterally right
+
+Down key (↓): Increases speed of falling piece
+
+Space: Hard drops piece
+
+P: Pause game (press again to resume)
+
+</value>
+  </data>
 </root>

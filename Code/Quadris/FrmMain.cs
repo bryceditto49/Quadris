@@ -21,6 +21,7 @@ namespace Quadris {
         bool Pause = false;
         bool filled = false;
         bool sound2 = false;
+        bool sound3 = false;
 
         private SoundPlayer sndPlayer;
 
@@ -77,6 +78,7 @@ namespace Quadris {
         sndPlayer = new SoundPlayer(Resources.lofi_music);
         sndPlayer.PlayLooping();
         sound2 = true;
+        sound3 = true;
         }
 
     private void CreateGrid() {
@@ -128,10 +130,6 @@ namespace Quadris {
                 UpdateGrid();
             }
             else if (!board.Game_Lost && !board.moveable)
-            {
-
-            }
-            else if (board.Game_Lost && board.moveable)
             {
 
             }
@@ -233,6 +231,7 @@ namespace Quadris {
             }
             UpdateGrid();
             board.SettlePiece();
+            board.CheckForLine();
           break;
       } 
     }
@@ -246,12 +245,21 @@ namespace Quadris {
             // (Jacoby Johnson) Score 3: Q30 As a player, I would like to have my active score displayed so I can keep track of my score while playing the game.
             label2.Text = board.Score.ToString();
             panel2.BackgroundImage = pieceColorToImgShape[board.Pieces[1].Color];
+
+            // (Andres Torres/Jacoby Johnson)
             // Changes the music to more engaging music if the score is greater than 2.
             if (board.Score > 2 && sound2 == true)
             {
                 sndPlayer = new SoundPlayer(Resources.bg_music_2);
                 sndPlayer.PlayLooping();
                 sound2 = false;
+
+            }
+            else if (board.Score > 10 && sound3 == true)
+            {
+                sndPlayer = new SoundPlayer(Resources.bg_music_3);
+                sndPlayer.PlayLooping();
+                sound3 = false;
 
             }
             //(Jacoby Johnson) Score 3: Q9 - Shows the next piece in the top left box

@@ -221,6 +221,9 @@ namespace Quadris {
                     Paused.Text = "Paused";
 
                     break;
+                case Keys.L:
+                    board.Score++;
+                    break;
                 case Keys.Down:
                     //board.Score++;
           tmrFps.Interval = 100;
@@ -246,7 +249,9 @@ namespace Quadris {
             // (Jacoby Johnson) Score 3: Q30 As a player, I would like to have my active score displayed so I can keep track of my score while playing the game.
             label2.Text = board.Score.ToString();
             panel2.BackgroundImage = pieceColorToImgShape[board.Pieces[1].Color];
-            // Changes the music to more engaging music if the score is greater than 2.
+
+            // (Andres Torres/Jacoby Johnson)
+            // Changes the music to more engaging music if the score is greater than 5 and then again at 10.
             if (board.Score > 5 && sound2 == true)
             {
                 sndPlayer = new SoundPlayer(Resources.bg_music_2);
@@ -279,6 +284,7 @@ namespace Quadris {
             }
         }
 
+        //Andres added the tutorial label
         private void label1_Click(object sender, EventArgs e)
         {
 
